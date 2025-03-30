@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <div class="header-flex">
+          <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+          <h1>Page Not Found</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BSI_Academic_Advising.html">Academic Advising</a></li>
+            <li><a href="Food_pantry.html">Food Pantry</a></li>
+            <li><a href="CAPS.html">CAPS</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main id="main-content">
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>404 - Oops! That page doesn't exist.</h2>
+            <p>Looks like you followed a bad link or typed the wrong URL. </p>
+            <a href="index.html" style="font-weight:bold; color:#00274C;">Return to Home</a>
+            <div class="image-container">
+              <img src="images/404.png" alt="Confused emoji">
+            </div>
+          </div>
+        </div>
+      </main>
+    
+      <footer>
+        <div class="footer-container">
+          <p>&copy; <span id="year"></span> University of Michigan - Student Success Portal</p>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="BSI_Academic_Advising.html">Academic Advising</a> |
+            <a href="Food_pantry.html">Food Pantry</a> |
+            <a href="CAPS.html">CAPS</a>
+          </nav>
+        </div>
+      </footer>
+    
+      <header>
+    <div class="header-flex">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      <h1>Page Not Found</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="BSI_Academic_Advising.html">Academic Advising</a></li>
+        <li><a href="Food_pantry.html">Food Pantry</a></li>
+        <li><a href="CAPS.html">CAPS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="grid-container">
+      <div class="grid-item">
+        <h2>404 - Oops! That page doesn't exist.</h2>
+        <p>Looks like you followed a bad link or typed the wrong URL. But no worries — we’ll help you get back on track.</p>
+        <a href="index.html" style="font-weight:bold; color:#00274C;">Return to Home</a>
+        <div class="image-container">
+          <img src="images/404-illustration.png" alt="Confused wolverine illustration (if you have one)">
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year"></span> University of Michigan - Student Success Portal</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> |
+        <a href="BSI_Academic_Advising.html">Academic Advising</a> |
+        <a href="Food_pantry.html">Food Pantry</a> |
+        <a href="CAPS.html">CAPS</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        const toggleBtn = document.getElementById("toggleBtn");
+        const extraContent = document.getElementById("extraContent");
+      
+        toggleBtn.addEventListener("click", () => {
+          if (extraContent.style.display === "none") {
+            extraContent.style.display = "block";
+            toggleBtn.textContent = "Show Less";
+          } else {
+            extraContent.style.display = "none";
+            toggleBtn.textContent = "Show More";
+          }
+        });
+      </script>
+</body>
+</html>
